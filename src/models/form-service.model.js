@@ -6,7 +6,6 @@ const DataTypes = Sequelize.DataTypes;
 module.exports = function (app) {
   const sequelizeClient = app.get('sequelizeClient');
   const formService = sequelizeClient.define('form_service', {
-  
     email: { type: DataTypes.STRING, allowNull: false },
     name: { type: DataTypes.STRING, allowNull: false },
     date_of_birth: { type: DataTypes.STRING, allowNull: false },
